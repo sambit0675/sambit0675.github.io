@@ -1,6 +1,6 @@
 import { providers } from 'ethers'
-import { Signer } from 'arbundles/build/signing'
-import { SignatureConfig, SIG_CONFIG } from 'arbundles/build/constants'
+import { Signer } from 'arbundles/src/signing'
+import { SignatureConfig, SIG_CONFIG } from 'arbundles/src/constants'
 import { extractPublicKey } from '@metamask/eth-sig-util'
 import { WalletProvider } from './index'
 import BigNumber from 'bignumber.js';
@@ -93,10 +93,10 @@ export class InjectedWalletProvider implements WalletProvider {
 //     new Uint8Array(hexString.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
 
 class InjectedSigner implements Signer {
-    readonly ownerLength: number = SIG_CONFIG[SignatureConfig.ETHERIUM].pubLength;
+    readonly ownerLength: number = SIG_CONFIG[SignatureConfig.ETHEREUM].pubLength;
     readonly signatureLength: number =
-        SIG_CONFIG[SignatureConfig.ETHERIUM].sigLength;
-    readonly signatureType: SignatureConfig = SignatureConfig.ETHERIUM;
+        SIG_CONFIG[SignatureConfig.ETHEREUM].sigLength;
+    readonly signatureType: SignatureConfig = SignatureConfig.ETHEREUM;
     private injectedProvider: InjectedWalletProvider;
     public readonly publicKey: Buffer;
 
