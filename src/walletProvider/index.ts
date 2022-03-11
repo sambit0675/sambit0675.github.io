@@ -1,4 +1,4 @@
-import { Signer } from 'arbundles/build/signing/'
+import { Signer } from 'arbundles/src/signing/'
 import BigNumber from "bignumber.js"
 export { InjectedWalletProvider } from './injectedWalletProvider'
 
