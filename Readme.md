@@ -15,7 +15,7 @@ git clone https://github.com/sambit0675/matic-bundlr.git
 cd matic-bundlr
 ```
 ```
-code.
+code .
 ```
 * after this the codes are open in your ide then type
 ```
