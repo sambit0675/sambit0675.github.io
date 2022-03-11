@@ -12,7 +12,10 @@ git clone https://github.com/sambit0675/matic-bundlr.git
 ```
 * paste the given code then type
 ```
-.code
+cd matic-bundlr
+```
+```
+code.
 ```
 * after this the codes are open in your ide then type
 ```
